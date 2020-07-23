@@ -16,7 +16,7 @@ namespace Cliente
 
         protected void btnCalcularModulo_Click(object sender, EventArgs e)
         {
-            ServiceReference.IService sc = new ServiceReference.ServiceClient();
+            ServiceReference.ServiceClient sc = new ServiceReference.ServiceClient();
             ServiceReference.Factor factor = new ServiceReference.Factor();
 
             float a = 0.0f;
