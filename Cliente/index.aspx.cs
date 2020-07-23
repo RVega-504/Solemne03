@@ -26,9 +26,15 @@ namespace Cliente
             bool isB = float.TryParse(txtFactorB.Text, out b);
 
             if (isA && isB)
+            {
                 factor.A = a;
                 factor.B = b;
                 lblResultado.Text = string.Format("El Resultado del Módulo es: {0}", sc.calcularModulo(factor));
+            }
+            else
+            {
+                lblResultado.Text = "ERROR: datos ingresados invalidos";
+            }
         }
     }
 }
